@@ -1,0 +1,117 @@
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-font-smoothing: antialiased;
+    &:hover{
+        outline: none;
+    }
+}
+body {
+  color: #333;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Microsoft Yahei";
+  font-size: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #524948;
+}
+textarea,button,input{
+  font-family: "Microsoft Yahei";
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width: 0px;
+    height: 0px;
+    background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+input, button, textarea {
+  -webkit-appearance: none;
+  border:none;
+  outline: none;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+.clear::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clear{
+    zoom:1;
+}
+
+.margin{
+    margin: 0 auto;
+}
+
+.fl-l{
+    float: left;
+}
+
+.fl-r{
+    float: right;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.video-js.vjs-paused.vjs-has-started .vjs-title-bar, .video-js.vjs-user-active.vjs-has-started .vjs-title-bar {
+  display: block;
+}
+
+.video-js .vjs-title-bar {
+  display: none;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  padding-left: 15px;
+  color: #ffffff;
+  background: rgba(0,0,0,0.2);
+  z-index: 999;
+  position: absolute;
+}
+
+/*Flex*/
+@import "flex.scss";
