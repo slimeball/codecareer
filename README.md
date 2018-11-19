@@ -1,6 +1,8 @@
 # codecareer
 
 vue components record
+
+* radio favorite list
 ```
 {
   favorites-list:
