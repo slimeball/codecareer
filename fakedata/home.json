@@ -1,9 +1,0 @@
-{
-  code: 200,
-  newsList: [
-    {
-      title: 'first',
-      descrition: 'first news this is'
-    }
-  ]
-}
