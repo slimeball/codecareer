@@ -1,6 +1,6 @@
 // add version number to static file include
 const fs = require('fs');
-const file = './xxxxxx';
+const file = './xxxxxx/a.html';  // the file need modify
 
 fs.readFile(file, 'utf-8', (err, data)=>{
   if(err) return console.error(err);
