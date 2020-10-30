@@ -12,3 +12,5 @@ vue components record
   show-favorites: true	
 }
 ```
+
+node/ node脚本
